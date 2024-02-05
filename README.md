@@ -19,7 +19,7 @@ This repository contains a list of pre-set presets for DCM that are used on Surf
 - **Intl:** contains all lint rules for the Intl package.
 - **Pub:** contains all lint rules for linting the `pubspec.yaml` files.
 
-## How to use a preset
+## Installation
 
 Take these steps to enable a preset:
 
