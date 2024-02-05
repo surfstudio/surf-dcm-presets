@@ -1,0 +1,4 @@
+dart_code_metrics:
+  rules:
+    # Style
+    - unnecessary-trailing-comma: false
