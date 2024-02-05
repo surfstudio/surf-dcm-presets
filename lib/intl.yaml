@@ -1,0 +1,6 @@
+dart_code_metrics:
+  rules:
+    # https://dcm.dev/docs/rules/intl
+    - prefer-date-format
+    - prefer-intl-name
+    - prefer-providing-intl-description
