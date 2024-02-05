@@ -1,0 +1,35 @@
+dart_code_metrics:
+  rules:
+    # https://dcm.dev/docs/rules/flutter
+    - avoid-border-all
+    - avoid-empty-setstate
+    - avoid-expanded-as-spacer
+    - avoid-incomplete-copy-with
+    - avoid-late-context
+    - avoid-recursive-widget-calls
+    - avoid-returning-widgets
+    - avoid-shrink-wrap-in-lists
+    - avoid-single-child-column-or-row
+    - avoid-stateless-widget-initialized-fields
+    - avoid-undisposed-instances
+    - avoid-unnecessary-overrides-in-state
+    - avoid-unnecessary-setstate
+    - avoid-unnecessary-stateful-widgets
+    - avoid-wrapping-in-padding
+    - check-for-equals-in-render-object-setters
+    - consistent-update-render-object
+    - dispose-fields
+    - prefer-const-border-radius
+    - prefer-correct-edge-insets-constructor
+    - prefer-dedicated-media-query-methods
+    - prefer-define-hero-tag
+    - prefer-extracting-callbacks:
+        allowed-line-count: 3
+    - prefer-single-widget-per-file:
+        ignore-private-widgets: true
+    - prefer-sliver-prefix
+    - prefer-text-rich
+    - prefer-using-list-view
+    - prefer-widget-private-members
+    - proper-super-calls
+    - use-setstate-synchronously
