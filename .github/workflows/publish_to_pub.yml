@@ -1,0 +1,44 @@
+name: "Publishing"
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  check_branch_content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Content
+        id: check_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "LICENSE, README.md, CHANGELOG.md, CONTRIBUTING.md"
+
+      - name: File exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        run: echo Content is ok!
+
+      - name: Check Description
+        run: echo | grep -q Description README.md ; echo $?
+
+      - name: Check Example
+        run: echo | grep -q Example README.md ; echo $?
+
+      - name: Check Installation
+        run: echo | grep -q Installation README.md ; echo $?
+
+
+  package-publishing:
+    needs: check_branch_content
+    uses: surfstudio/flutter-ci-workflows/.github/workflows/publish_to_pub.yml@main
+    with:
+      PANA_TOTAL: '100'
+    secrets:
+      PUB_CREDENTIAL_JSON: ${{ secrets.PUB_CREDENTIAL_JSON }}
+      PUB_OAUTH_ACCESS_TOKEN: ${{ secrets.PUB_OAUTH_ACCESS_TOKEN }}
+      PUB_OAUTH_REFRESH_TOKEN: ${{ secrets.PUB_OAUTH_REFRESH_TOKEN }}
