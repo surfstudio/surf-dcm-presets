@@ -11,10 +11,9 @@
 
 This repository contains a list of pre-set presets for DCM that are used on Surf projects:
 
-- **All:** contains all available lint rules for Dart and Flutter.
+- **All:** contains all available lint rules.
 - **Dart:** contains all lint rules applicable to any Dart app.
 - **Flutter:** contains all lint rules applicable to any Flutter app.
-- **Recommended:** contains recommended Dart and Flutter rules.
 - **Provider:** contains all lint rules for the Provider package.
 - **Intl:** contains all lint rules for the Intl package.
 - **Pub:** contains all lint rules for linting the `pubspec.yaml` files.
@@ -23,7 +22,7 @@ This repository contains a list of pre-set presets for DCM that are used on Surf
 
 Take these steps to enable a preset:
 
-1. Install this package as a dev dependency:
+Install this package as a dev dependency:
 
    ```terminal
    dart pub add --dev surf_dcm_presets
@@ -34,8 +33,9 @@ Take these steps to enable a preset:
    ```terminal
    flutter pub add --dev surf_dcm_presets
    ```
+## Example
 
-2. For DCM configuration add the `extents` entry:
+For DCM configuration add the `extents` entry:
 
    ```yaml
    dart_code_metrics:

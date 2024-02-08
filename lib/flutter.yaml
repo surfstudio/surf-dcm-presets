@@ -33,3 +33,5 @@ dart_code_metrics:
     - prefer-widget-private-members
     - proper-super-calls
     - use-setstate-synchronously
+    # Style
+    - unnecessary-trailing-comma: false

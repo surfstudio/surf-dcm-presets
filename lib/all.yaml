@@ -2,3 +2,6 @@ dart_code_metrics:
   extends:
     - package:surf_dcm_presets/dart.yaml
     - package:surf_dcm_presets/flutter.yaml
+    - package:surf_dcm_presets/provider.yaml
+    - package:surf_dcm_presets/intl.yaml
+    - package:surf_dcm_presets/pub.yaml
