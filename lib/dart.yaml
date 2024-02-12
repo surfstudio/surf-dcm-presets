@@ -190,3 +190,5 @@ dart_code_metrics:
     - prefer-typedefs-for-callbacks
     - prefer-unique-test-names
     - prefer-wildcard-pattern
+    # Style
+    - unnecessary-trailing-comma: false
