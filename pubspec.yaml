@@ -1,0 +1,7 @@
+name: surf_dcm_presets
+version: 0.0.1
+description: Predefined presets for Dart Code Metrics.
+repository: https://github.com/surfstudio/surf-dcm-presets
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"

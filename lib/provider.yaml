@@ -1,0 +1,8 @@
+dart_code_metrics:
+  rules:
+    # https://dcm.dev/docs/rules/provider
+    - avoid-instantiating-in-value-provider
+    - avoid-read-inside-build
+    - avoid-watch-outside-build
+    - dispose-providers
+    - prefer-multi-provider

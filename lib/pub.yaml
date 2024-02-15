@@ -1,0 +1,8 @@
+dart_code_metrics:
+  pubspec-rules:
+    - avoid-any-version
+    - prefer-publish-to-none
+    - prefer-semver-version
+    - banned-dependencies:
+        banned:
+          - get
