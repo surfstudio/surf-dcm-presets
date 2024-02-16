@@ -1,6 +1,6 @@
 # Surf DCM Presets
 
-[![Build Status](https://shields.io/github/actions/workflow/status/surfstudio/flutter-surf-logger/main.yml?logo=github&logoColor=white)](https://github.com/surfstudio/surf-dcm-presets)
+[![Build Status](https://shields.io/github/actions/workflow/status/surfstudio/surf-dcm-presets/main.yml?logo=github&logoColor=white)](https://github.com/surfstudio/surf-dcm-presets)
 [![Pub Version](https://img.shields.io/pub/v/surf_dcm_presets?logo=dart&logoColor=white)](https://pub.dev/packages/surf_dcm_presets)
 [![Pub Likes](https://badgen.net/pub/likes/surf_dcm_presets)](https://pub.dev/packages/surf_dcm_presets)
 [![Pub popularity](https://badgen.net/pub/popularity/surf_dcm_presets)](https://pub.dev/packages/surf_dcm_presets/score)
