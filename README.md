@@ -32,6 +32,7 @@ Install this package as a dev dependency:
    ```terminal
    flutter pub add --dev surf_dcm_presets
    ```
+
 ## Example
 
 For DCM configuration add the `extents` entry:
