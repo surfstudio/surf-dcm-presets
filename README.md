@@ -6,7 +6,7 @@
 [![Pub popularity](https://badgen.net/pub/popularity/surf_dcm_presets)](https://pub.dev/packages/surf_dcm_presets/score)
 ![Flutter Platform](https://badgen.net/pub/flutter-platform/surf_dcm_presets)
 
-## Description
+## Overview
 
 This repository contains a list of pre-set presets for DCM that are used on Surf projects:
 
