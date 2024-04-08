@@ -21,8 +21,8 @@ jobs:
         if: steps.check_files.outputs.files_exists == 'true'
         run: echo Content is ok!
 
-      - name: Check Description
-        run: echo | grep -q Description README.md ; echo $?
+      - name: Check Overview
+        run: echo | grep -q Overview README.md ; echo $?
 
       - name: Check Example
         run: echo | grep -q Example README.md ; echo $?
