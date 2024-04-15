@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+* Rebranding
+
 ## 0.0.2
 
 * fixed Build Status
