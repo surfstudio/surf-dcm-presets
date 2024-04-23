@@ -6,6 +6,10 @@ dart_code_metrics:
                   - body
                   - child
                   - children
+        - parameters-ordering:
+              required: "first"
+              default: "last"
+              super: "last"
         - avoid-accessing-collections-by-constant-index
         - avoid-accessing-other-classes-private-members
         - avoid-async-call-in-sync-function
