@@ -118,15 +118,16 @@ dart_code_metrics:
         - match-positional-field-names-on-assignment
         - member-ordering:
               order:
-                  - private-fields
                   - public-fields
-                  - private-getters
+                  - private-late-final-fields
+                  - private-fields
                   - public-getters
-                  - private-setters
+                  - private-getters
                   - public-setters
+                  - private-setters
                   - constructors
-                  - close-method
                   - init-state-method
+                  - close-method
                   - dispose-method
                   - public-methods
                   - private-methods
@@ -135,6 +136,7 @@ dart_code_metrics:
                   - final-fields
                   - constructor
                   - named-constructor
+                  - factory-constructors
                   - init-state-method
                   - did-change-dependencies-method
                   - did-update-widget-method
