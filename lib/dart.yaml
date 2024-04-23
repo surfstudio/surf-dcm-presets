@@ -126,7 +126,11 @@ dart_code_metrics:
                   - public-setters
                   - private-setters
                   - constructors
-                  - init-state-method
+                  - init-widget-model-method
+                  - init-method
+                  - did-change-dependencies-method
+                  - did-update-widget-method
+                  - on-error-handle-method
                   - close-method
                   - dispose-method
                   - public-methods
