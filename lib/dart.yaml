@@ -116,10 +116,10 @@ dart_code_metrics:
               order:
                   - private-fields
                   - public-fields
-                  - public-getters
                   - private-getters
-                  - public-setters
+                  - public-getters
                   - private-setters
+                  - public-setters
                   - constructors
                   - close-method
                   - init-state-method
