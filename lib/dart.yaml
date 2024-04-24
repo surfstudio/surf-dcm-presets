@@ -2,15 +2,17 @@ dart_code_metrics:
     rules:
         # https://dcm.dev/docs/rules/common
         - arguments-ordering:
+              exclude:
+                  - "lib/**/app_text_scheme.dart"
               last:
                   - body
                   - child
                   - children
         - parameters-ordering:
-              alphabetize: false
               required: "first"
               default: "last"
               super: "last"
+
         - avoid-accessing-collections-by-constant-index
         - avoid-accessing-other-classes-private-members
         - avoid-async-call-in-sync-function
@@ -120,8 +122,8 @@ dart_code_metrics:
         - member-ordering:
               order:
                   - public-fields
-                  - private-late-final-fields
                   - private-fields
+                  - private-late-final-fields
                   - public-getters
                   - private-getters
                   - public-setters
@@ -138,10 +140,10 @@ dart_code_metrics:
                   - private-methods
               widgets-order:
                   - const-fields
-                  - final-fields
                   - constructor
                   - named-constructor
                   - factory-constructors
+                  - final-fields
                   - init-state-method
                   - did-change-dependencies-method
                   - did-update-widget-method
