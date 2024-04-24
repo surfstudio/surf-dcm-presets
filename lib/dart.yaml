@@ -2,8 +2,6 @@ dart_code_metrics:
     rules:
         # https://dcm.dev/docs/rules/common
         - arguments-ordering:
-              exclude:
-                  - "lib/**/app_text_scheme.dart"
               last:
                   - body
                   - child
