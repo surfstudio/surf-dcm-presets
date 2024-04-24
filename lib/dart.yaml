@@ -7,6 +7,7 @@ dart_code_metrics:
                   - child
                   - children
         - parameters-ordering:
+              alphabetize: false
               required: "first"
               default: "last"
               super: "last"
