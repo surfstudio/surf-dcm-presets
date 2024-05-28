@@ -2,7 +2,15 @@ dart_code_metrics:
   rules:
     # https://dcm.dev/docs/rules/common
     - arguments-ordering:
-        child-last: true
+        last:
+          - body
+          - child
+          - children
+    - parameters-ordering:
+        required: "first"
+        default: "last"
+        super: "last"
+
     - avoid-accessing-collections-by-constant-index
     - avoid-accessing-other-classes-private-members
     - avoid-async-call-in-sync-function
@@ -113,26 +121,33 @@ dart_code_metrics:
         order:
           - public-fields
           - private-fields
+          - private-late-final-fields
           - public-getters
           - private-getters
           - public-setters
           - private-setters
           - constructors
+          - init-widget-model-method
+          - init-method
+          - did-change-dependencies-method
+          - did-update-widget-method
+          - on-error-handle-method
           - close-method
           - dispose-method
           - public-methods
           - private-methods
         widgets-order:
-          - constructor
-          - named-constructor
           - const-fields
           - final-fields
+          - constructor
+          - named-constructor
+          - factory-constructors
           - init-state-method
           - did-change-dependencies-method
           - did-update-widget-method
           - dispose-method
-          - private-methods
           - overriden-public-methods
+          - private-methods
           - build-method
     - move-records-to-typedefs:
         min-fields: 3
@@ -152,14 +167,14 @@ dart_code_metrics:
     - no-equal-switch-expression-cases
     - no-equal-then-else
     - no-magic-number:
-        allowed: [ -1, 0, 1 ]
+        allowed: [-1, 0, 1]
     - no-object-declaration
     - prefer-addition-subtraction-assignments
     - prefer-any-or-every
     - prefer-correct-callback-field-name:
         name-pattern: ^on[A-Z]+
     - prefer-correct-error-name:
-        allowed-names: [ error, exception, failure ]
+        allowed-names: [error, exception, failure]
     - prefer-correct-identifier-length:
         max-identifier-length: 30
         min-identifier-length: 2
