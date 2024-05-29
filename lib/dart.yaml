@@ -198,3 +198,4 @@ dart_code_metrics:
     - prefer-wildcard-pattern
     # Style
     - unnecessary-trailing-comma: false
+    - prefer-addition-subtraction-assignments
