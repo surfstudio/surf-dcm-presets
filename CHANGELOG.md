@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0
+
+* Update preset
+
 ## 0.0.4
 
 * Correct logo position in readme
