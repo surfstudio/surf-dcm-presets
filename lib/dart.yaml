@@ -1,6 +1,5 @@
 dart_code_metrics:
   rules:
-    # https://dcm.dev/docs/rules/common
     - arguments-ordering:
         last:
           - body
@@ -36,14 +35,12 @@ dart_code_metrics:
     - avoid-dynamic
     - avoid-equal-expressions
     - avoid-explicit-pattern-field-name
-    - avoid-explicit-type-declaration
     - avoid-extensions-on-records
     - avoid-function-type-in-records
     - avoid-future-tostring
     - avoid-generics-shadowing
     - avoid-global-state
     - avoid-identical-exception-handling-blocks
-    - avoid-ignoring-return-values
     - avoid-inverted-boolean-checks
     - avoid-keywords-in-wildcard-pattern
     - avoid-local-functions
@@ -111,9 +108,9 @@ dart_code_metrics:
     - avoid-unused-parameters
     - binary-expression-operand-order
     - double-literal-format:
-        explicit-trailing-zero: true
+        explicit-trailing-zero: false
     - format-comment:
-        only-doc-comments: false
+        only-doc-comments: true
     - function-always-returns-null
     - map-keys-ordering
     - match-positional-field-names-on-assignment
@@ -156,25 +153,19 @@ dart_code_metrics:
     - move-variable-outside-iteration
     - newline-before-return
     - no-boolean-literal-compare
-    - no-empty-block
-    - no-equal-arguments:
-        ignored-parameters:
-          - height
-          - width
+    - no-empty-block:
+        exclude:
+          - test/**
     - no-equal-conditions
     - no-equal-nested-conditions
     - no-equal-switch-case
     - no-equal-switch-expression-cases
     - no-equal-then-else
-    - no-magic-number:
-        allowed: [-1, 0, 1]
     - no-object-declaration
     - prefer-addition-subtraction-assignments
     - prefer-any-or-every
     - prefer-correct-callback-field-name:
         name-pattern: ^on[A-Z]+
-    - prefer-correct-error-name:
-        allowed-names: [error, exception, failure]
     - prefer-correct-identifier-length:
         max-identifier-length: 30
         min-identifier-length: 2
@@ -207,3 +198,4 @@ dart_code_metrics:
     - prefer-wildcard-pattern
     # Style
     - unnecessary-trailing-comma: false
+    - prefer-addition-subtraction-assignments

@@ -30,6 +30,5 @@ dart_code_metrics:
     - prefer-sliver-prefix
     - prefer-text-rich
     - prefer-using-list-view
-    - prefer-widget-private-members
     - proper-super-calls
     - use-setstate-synchronously
