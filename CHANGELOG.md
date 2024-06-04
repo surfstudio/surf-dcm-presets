@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.1
+ 
+### Removed
+
+* parameters-ordering
+
+### Updated
+
+* member-ordering
+
 ## 0.1.0
 
 * Update preset
