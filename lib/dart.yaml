@@ -5,11 +5,6 @@ dart_code_metrics:
           - body
           - child
           - children
-    - parameters-ordering:
-        required: "first"
-        default: "last"
-        super: "last"
-
     - avoid-accessing-collections-by-constant-index
     - avoid-accessing-other-classes-private-members
     - avoid-async-call-in-sync-function
@@ -134,11 +129,11 @@ dart_code_metrics:
           - public-methods
           - private-methods
         widgets-order:
-          - const-fields
-          - final-fields
           - constructor
           - named-constructor
           - factory-constructors
+          - const-fields
+          - final-fields
           - init-state-method
           - did-change-dependencies-method
           - did-update-widget-method
