@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+* "Factory" and "Buider" for `prefer-correct-callback-field-name`
+* Exclude tests for `avoid-long-functions`
+* Skip checked fields for `avoid-non-null-assertion`
+* `prefer-correct-identifier-length` exceptions
+
 ## 0.1.1
  
 ### Removed

@@ -45,6 +45,8 @@ dart_code_metrics:
         max-length: 80
         ignored-names:
           - build
+        exclude:
+          - test/**
     - avoid-long-parameter-list:
         ignore-optional: true
         max-amount: 5
@@ -68,7 +70,8 @@ dart_code_metrics:
     - avoid-nested-streams-and-futures
     - avoid-nested-switch-expressions
     - avoid-nested-switches
-    - avoid-non-null-assertion
+    - avoid-non-null-assertion:
+        skip-checked-fields: true
     - avoid-nullable-interpolation
     - avoid-nullable-parameters-with-default-values
     - avoid-nullable-tostring
@@ -160,8 +163,9 @@ dart_code_metrics:
     - prefer-addition-subtraction-assignments
     - prefer-any-or-every
     - prefer-correct-callback-field-name:
-        name-pattern: ^on[A-Z]+
+        name-pattern: "(^on[A-Z]+)|(^[a-zA-z]+Factory$)|(^[a-zA-z]+Builder$)|(^builder$)"
     - prefer-correct-identifier-length:
+        exceptions: ["a", "b", "i", "j", "k"]
         max-identifier-length: 30
         min-identifier-length: 2
     - prefer-correct-stream-return-type
