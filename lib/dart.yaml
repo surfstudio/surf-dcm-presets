@@ -15,6 +15,7 @@ dart_code_metrics:
     - avoid-cascade-after-if-null
     - avoid-collapsible-if
     - avoid-collection-methods-with-unrelated-types
+    - avoid-commented-out-code
     - avoid-declaring-call-method
     - avoid-double-slash-imports
     - avoid-duplicate-cascades
@@ -33,12 +34,16 @@ dart_code_metrics:
     - avoid-extensions-on-records
     - avoid-function-type-in-records
     - avoid-future-tostring
+    - avoid-future-ignore
     - avoid-generics-shadowing
     - avoid-global-state
     - avoid-identical-exception-handling-blocks
+    - avoid-if-with-many-branches
     - avoid-inverted-boolean-checks
     - avoid-keywords-in-wildcard-pattern
-    - avoid-local-functions
+    - avoid-local-functions:
+        exclude:
+            - test/**
     - avoid-long-files:
         max-length: 500
     - avoid-long-functions:
@@ -72,6 +77,7 @@ dart_code_metrics:
     - avoid-nested-switches
     - avoid-non-null-assertion:
         skip-checked-fields: true
+    - avoid-nested-try-statements
     - avoid-nullable-interpolation
     - avoid-nullable-parameters-with-default-values
     - avoid-nullable-tostring
@@ -81,6 +87,10 @@ dart_code_metrics:
     - avoid-passing-self-as-argument
     - avoid-positional-record-field-access
     - avoid-recursive-calls
+    - avoid-recursive-tostring
+    - avoid-enum-values-by-index 
+    - avoid-unnecessary-block
+    - avoid-unnecessary-compare-to
     - avoid-redundant-async
     - avoid-redundant-else
     - avoid-referencing-discarded-variables
@@ -101,7 +111,7 @@ dart_code_metrics:
     - avoid-unnecessary-nullable-return-type
     - avoid-unnecessary-return
     - avoid-unnecessary-super
-    - avoid-unsafe-collection-methods
+    - avoid-unsafe-collection-methods: false
     - avoid-unused-after-null-check
     - avoid-unused-parameters
     - binary-expression-operand-order
@@ -160,12 +170,13 @@ dart_code_metrics:
     - no-equal-switch-expression-cases
     - no-equal-then-else
     - no-object-declaration
+    - pattern-fields-ordering
     - prefer-addition-subtraction-assignments
     - prefer-any-or-every
     - prefer-correct-callback-field-name:
         name-pattern: "(^on[A-Z]+)|(^[a-zA-z]+Factory$)|(^[a-zA-z]+Builder$)|(^builder$)"
     - prefer-correct-identifier-length:
-        exceptions: ["a", "b", "i", "j", "k"]
+        exceptions: ["a", "b", "i", "j", "k", "p", "c"]
         max-identifier-length: 30
         min-identifier-length: 2
     - prefer-correct-stream-return-type
@@ -175,6 +186,7 @@ dart_code_metrics:
         ignore-if-case: true
     - prefer-explicit-function-type
     - prefer-explicit-type-arguments
+    - prefer-extracting-callbacks: false
     - prefer-immediate-return
     - prefer-match-file-name:
         exclude:
@@ -189,6 +201,7 @@ dart_code_metrics:
     - prefer-parentheses-with-if-null
     - prefer-public-exception-classes
     - prefer-return-await
+    - prefer-simpler-boolean-expressions
     - prefer-simpler-patterns-null-check
     - prefer-switch-with-enums
     - prefer-test-matchers
