@@ -123,36 +123,32 @@ dart_code_metrics:
     - map-keys-ordering
     - match-positional-field-names-on-assignment
     - member-ordering:
+        alphabetize: true
         order:
-          - public-fields
-          - private-fields
-          - private-late-final-fields
-          - public-getters
-          - private-getters
-          - public-setters
-          - private-setters
+          - static-fields
+          - static-methods
+
           - constructors
-          - init-widget-model-method
-          - init-method
-          - did-change-dependencies-method
-          - did-update-widget-method
-          - on-error-handle-method
-          - close-method
-          - dispose-method
+          - named-constructors
+          - factory-constructors
+
+          - public-fields
+          - public-getters-setters
           - public-methods
+          
+          - overridden-fields
+          - overridden-getters-setters
+          - overridden-methods
+          
+          - private-fields
+          - private-getters-setters
           - private-methods
         widgets-order:
           - constructor
-          - named-constructor
-          - factory-constructors
-          - const-fields
-          - final-fields
           - init-state-method
           - did-change-dependencies-method
           - did-update-widget-method
           - dispose-method
-          - overriden-public-methods
-          - private-methods
           - build-method
     - move-records-to-typedefs:
         min-fields: 3

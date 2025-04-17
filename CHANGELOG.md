@@ -20,12 +20,13 @@
 ### Removed
 
 * avoid-unsafe-collection-methods
-* added "p" and "c" for prefer-correct-identifier-length for "previous" and "current"
 * prefer-extracting-callbacks
 
 ### Updated
  
-* Exclude tests for avoid-local-functions
+* exclude tests for avoid-local-functions
+* added "p" and "c" for prefer-correct-identifier-length for "previous" and "current"
+* changed member ordering
 
 ## 0.2.0
 
