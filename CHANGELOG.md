@@ -22,6 +22,7 @@
 * avoid-unsafe-collection-methods
 * added "p" and "c" for prefer-correct-identifier-length for "previous" and "current"
 * prefer-extracting-callbacks
+* avoid-empty-setstate
 
 ### Updated
  
