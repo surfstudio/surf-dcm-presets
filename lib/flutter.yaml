@@ -2,7 +2,7 @@ dart_code_metrics:
   rules:
     # https://dcm.dev/docs/rules/flutter
     - avoid-border-all
-    - avoid-empty-setstate
+    - avoid-empty-setstate: false
     - avoid-expanded-as-spacer
     - avoid-incomplete-copy-with
     - avoid-late-context
