@@ -2,7 +2,7 @@ dart_code_metrics:
   rules:
     # https://dcm.dev/docs/rules/flutter
     - avoid-border-all
-    - avoid-empty-setstate
+    - avoid-empty-setstate: false
     - avoid-expanded-as-spacer
     - avoid-incomplete-copy-with
     - avoid-late-context
@@ -19,6 +19,8 @@ dart_code_metrics:
     - check-for-equals-in-render-object-setters
     - consistent-update-render-object
     - dispose-fields
+    - pass-existing-future-to-future-builder
+    - pass-existing-stream-to-stream-builder
     - prefer-const-border-radius
     - prefer-correct-edge-insets-constructor
     - prefer-dedicated-media-query-methods
