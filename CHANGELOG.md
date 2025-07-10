@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0
+
+### Addded
+
+* bloc.yaml
+
 ## 1.0.0
 
 ### Added

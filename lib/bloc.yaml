@@ -1,0 +1,27 @@
+dart_code_metrics:
+  rules:
+    - avoid-bloc-public-fields
+    - avoid-bloc-public-methods
+    - avoid-duplicate-bloc-event-handlers
+    - avoid-existing-instances-in-bloc-provider
+    - avoid-instantiating-in-bloc-value-provider
+    # Important architecture rule
+    - avoid-passing-bloc-to-bloc
+    - avoid-passing-build-context-to-blocs
+    - avoid-returning-value-from-cubit-methods
+    - check-is-not-closed-after-async-gap
+    - emit-new-bloc-state-instances
+    - handle-bloc-event-subclasses
+    - prefer-bloc-extensions
+    - prefer-bloc-event-suffix:
+        name-pattern: Event$
+        ignore-subclasses: true
+    - prefer-bloc-state-suffix:
+        name-pattern: State$
+        ignore-subclasses: true
+    - prefer-sealed-bloc-events:
+        name-pattern: Event$
+    - prefer-sealed-bloc-state:
+        name-pattern: State$
+    
+    

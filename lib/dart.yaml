@@ -7,6 +7,7 @@ dart_code_metrics:
           - children
     - avoid-accessing-collections-by-constant-index
     - avoid-accessing-other-classes-private-members
+    - avoid-assignments-as-conditions
     - avoid-async-call-in-sync-function
     - avoid-barrel-files
     - avoid-bottom-type-in-patterns
@@ -67,7 +68,8 @@ dart_code_metrics:
     - avoid-misused-wildcard-pattern
     - avoid-mixing-named-and-positional-fields
     - avoid-mutating-parameters
-    - avoid-negated-conditions
+    - avoid-negated-conditions: 
+        ignore-null-checks: true
     - avoid-nested-conditional-expressions:
         acceptable-level: 2
     - avoid-nested-futures
@@ -78,7 +80,7 @@ dart_code_metrics:
     - avoid-non-null-assertion:
         skip-checked-fields: true
     - avoid-nested-try-statements
-    - avoid-nullable-interpolation
+    - avoid-nullable-interpolation: false
     - avoid-nullable-parameters-with-default-values
     - avoid-nullable-tostring
     - avoid-one-field-records
@@ -97,7 +99,9 @@ dart_code_metrics:
     - avoid-self-assignment
     - avoid-self-compare
     - avoid-shadowed-extension-methods
-    - avoid-shadowing
+    - avoid-shadowing:
+        ignored-names:
+          - context
     - avoid-throw-in-catch-block
     - avoid-throw-objects-without-tostring
     - avoid-unassigned-late-fields
@@ -123,33 +127,42 @@ dart_code_metrics:
     - map-keys-ordering
     - match-positional-field-names-on-assignment
     - member-ordering:
-        alphabetize: true
+        alphabetize: false
         order:
           - static-fields
           - static-methods
+
+          - private-fields
+          - public-fields
 
           - constructors
           - named-constructors
           - factory-constructors
 
-          - public-fields
           - public-getters-setters
           - public-methods
-          
+
           - overridden-fields
           - overridden-getters-setters
           - overridden-methods
-          
-          - private-fields
+
           - private-getters-setters
           - private-methods
         widgets-order:
+          - const-fields
+          - static-methods
+          - final-fields
+          - var-fields
+          - public-getters
           - constructor
+          - named-constructor
           - init-state-method
           - did-change-dependencies-method
           - did-update-widget-method
           - dispose-method
           - build-method
+          - private-methods
+
     - move-records-to-typedefs:
         min-fields: 3
         min-occurences: 2
@@ -172,7 +185,7 @@ dart_code_metrics:
     - prefer-correct-callback-field-name:
         name-pattern: "(^on[A-Z]+)|(^[a-zA-z]+Factory$)|(^[a-zA-z]+Builder$)|(^builder$)"
     - prefer-correct-identifier-length:
-        exceptions: ["a", "b", "i", "j", "k", "p", "c"]
+        exceptions: ["a", "b", "i", "j", "k", "p", "c", "e", "s"]
         max-identifier-length: 30
         min-identifier-length: 2
     - prefer-correct-stream-return-type
@@ -187,7 +200,6 @@ dart_code_metrics:
     - prefer-match-file-name:
         exclude:
           - "test/**"
-          - "lib/**/*wm.dart"
     - prefer-moving-to-variable:
         allowed-duplicated-chains: 3
     - prefer-named-boolean-parameters:
