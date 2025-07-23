@@ -34,3 +34,19 @@ dart_code_metrics:
     - prefer-using-list-view
     - proper-super-calls
     - use-setstate-synchronously
+    - always-remove-listener
+    - avoid-inherited-widget-in-initstate
+    - avoid-state-constructors
+    - avoid-missing-image-alt
+    - avoid-unnecessary-gesture-detector
+    - avoid-missing-controller
+    - prefer-for-loop-in-children
+    - avoid-incorrect-image-opacity
+    - prefer-sized-box-square
+    - avoid-flexible-outside-flex
+    - prefer-center-over-align
+    - prefer-spacing
+    - prefer-transform-over-container
+    - prefer-align-over-container
+    - prefer-single-setstate
+    - avoid-mounted-in-setstate
