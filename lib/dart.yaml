@@ -360,3 +360,5 @@ dart_code_metrics:
     - avoid-unnecessary-nullable-fields
     - avoid-bitwise-operators-with-booleans
     - prefer-compound-assignment-operators
+    - match-lib-folder-structure
+    - prefer-both-inlining-annotations
