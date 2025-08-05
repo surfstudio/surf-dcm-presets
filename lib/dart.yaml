@@ -332,7 +332,6 @@ dart_code_metrics:
     - no-empty-string: false
     - avoid-continue: false
     - use-existing-destructuring
-    - prefer-class-destructuring
     - prefer-static-method: false
     - prefer-commenting-future-delayed
     - avoid-complex-arithmetic-expressions: 
