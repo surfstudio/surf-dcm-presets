@@ -282,7 +282,6 @@ dart_code_metrics:
     - newline-before-method
     - prefer-abstract-final-static-class 
     - prefer-bytes-builder
-    - prefer-commenting-analyzer-ignores
     - prefer-conditional-expressions:
         ignore-nested: true
     - prefer-contains
