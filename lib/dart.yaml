@@ -282,7 +282,6 @@ dart_code_metrics:
     - newline-before-method
     - prefer-abstract-final-static-class 
     - prefer-bytes-builder
-    - prefer-commenting-analyzer-ignores
     - prefer-conditional-expressions:
         ignore-nested: true
     - prefer-contains
@@ -312,7 +311,7 @@ dart_code_metrics:
         ignore-private: false
     - prefer-switch-with-sealed-classes: false
     - prefer-trailing-comma:
-        break-on: 2
+        break-on: 3
     - prefer-type-over-var
     - prefer-unwrapping-future-or
     - prefer-visible-for-testing-on-members
@@ -333,7 +332,6 @@ dart_code_metrics:
     - no-empty-string: false
     - avoid-continue: false
     - use-existing-destructuring
-    - prefer-class-destructuring
     - prefer-static-method: false
     - prefer-commenting-future-delayed
     - avoid-complex-arithmetic-expressions: 

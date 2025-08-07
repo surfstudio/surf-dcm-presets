@@ -21,7 +21,5 @@ dart_code_metrics:
         ignore-subclasses: true
     - prefer-sealed-bloc-events:
         name-pattern: Event$
-    - prefer-sealed-bloc-state:
-        name-pattern: State$
     
     
